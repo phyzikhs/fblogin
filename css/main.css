@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: #fff;
   color: #1c1e21;
@@ -9,18 +14,44 @@ body {
 }
 
 .fblogo {
-  height: 106px !important;
+  height: 106px;
 }
 
 .inner {
+  background: #f0f2f5;
   padding-bottom: 112px;
   padding-top: 72px;
+}
+
+.col {
+  float: left;
+  width: 50%;
+  min-width: 200px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 8px;
+  height: 47.5px;
+  border: 0px;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .card {
   width: 396px;
   margin-top: 40px;
   padding-top: 10px;
+  padding-left: 2rem;
   padding-bottom: 20px;
 }
 
@@ -33,7 +64,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  display: inherit;
+  display: inline !important;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -47,7 +78,7 @@ body {
   color: -internal-light-dark(#1877f2, white);
 }
 
-.card .card-content input :focus {
+.card .card-content input:focus {
   color: -internal-light-dark(#1877f2, white);
 }
 
@@ -61,13 +92,23 @@ body {
   border-color: #42b72a;
 }
 
-@media only screen and (max-width: 720px) {
+.create-page a {
+  color: black;
+  text-decoration: none;
+}
+
+.create-page a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
   .card {
     width: 396px;
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 8px;
+    background: #fff;
   }
 }
 /*# sourceMappingURL=main.css.map */
