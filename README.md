@@ -1,5 +1,5 @@
 ��# fblogin
 
-Deployed link: https://app.netlify.com/teams/ngelemarweapons/overview
+Deployed link: https://competent-lovelace-2ef950.netlify.app/
 
 Bootstrap repo: https://github.com/ngelemarweapons/fblogin-bootstrap
