@@ -40,42 +40,43 @@ body {
     &:hover{
         cursor: pointer;
     }
+    font-weight: bold;
 }
 
 .card{
     width: 396px;
-    margin-top: 40px;
+    margin: 40px auto 0;
     padding-top: 10px;
-    padding-left: 2rem;
     padding-bottom: 20px;
 
     .card-content{
         display: inline;
         width: 100%;
-        *{
-            align-self: center;
+        .card-elt{
             display: inline !important;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-        input{
             width: 100%;
-            height: 40px;
-            border: 1.25px;
-            border-radius: 6px;
-            border-color: #1877f2;
-            color: -internal-light-dark(#1877f2, white);
-            &:focus{
+            padding-top: 20px;
+            margin-top: 20px;
+
+            input{
+                width: 100%;
+                height: 40px;
+                border: 1.25px;
+                border-radius: 6px;
+                border-color: #1877f2;
                 color: -internal-light-dark(#1877f2, white);
+                &:focus{
+                    color: -internal-light-dark(#1877f2, white);
+                }
             }
-        }
-        .btn-primary{
-            background-color: #1877f2;
-            width: 100%;
-        }
-        .btn-success{
-            background-color: #42b72a;
-            border-color: #42b72a;
+            .btn-primary{
+                background-color: #1877f2;
+                width: 100%;
+            }
+            .btn-success{
+                background-color: #42b72a;
+                border-color: #42b72a;
+            }
         }
     }
 }
